@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*页面宽度*/
+/*logo的尺寸*/
+/*导航的尺寸*/
+/*header的高度*/
+/*    搜索框、按钮、外包裹尺寸*/
+/*水平居中*/
+/*内外边距值为零*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=common.css.map */
