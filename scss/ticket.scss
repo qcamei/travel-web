@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import"common.scss";
+.ticket {
+	color: #666;
+	text-align: left;
+	.field {
+		font-size: 20px;
+		border: medium none;
+		p {
+			line-height: 3;
+			input {
+				background: #fff;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				color: #999;
+				padding: 5px;
+				width: 250px;
+				height:30px;
+				margin: 0 0 0 24px;
+				font-size: 20px;
+			}
+		}
+	}
+	.type{
+
+		font-size: 20px;
+		mark{
+			background: #458b00;
+			padding: 5px 8px;
+			color: #fff;
+			border-radius: 4px;
+			margin: 0 8px 0 16px;
+		}
+	}
+
+
+	.left{
+		display: inline-block;
+		width: 43%;
+	}
+	.right{
+		display: inline-block;
+		width: 43%;
+		margin: 0 0 0 20px;
+	}
+
+	.button {
+		display: inline-block;
+		float: right;
+		width: 9%;
+		position: relative;
+		.submit{
+			background: #f60;
+			color: #fff;
+			width: 90px;
+			height: 90px;
+			line-height: 90px;
+			border-style: none;
+			border-radius: 4px;
+			font-size: 20px;
+			position: absolute;
+			top: 14px;
+			right: 15px;
+			cursor: pointer;
+		}
+	}
+
+	.new {
+		font-size: 20px;
+		margin: 20px 0 0;
+		ul {
+			margin: 20px 0 0;
+
+		}
+			li {
+				display: inline-block;
+				padding: 5px 10px;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:nth-child(2) {
+					background-color: #458b00;
+					color: #fff;
+					border-radius: 4px;
+				}
+
+			}
+
+		/*table单元格td的样式*/
+		%tb_td{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border-bottom: 1px solid #ddd;	
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border: 1px solid #ddd;
+			margin: 20px 0 0;
+
+			.tb{
+				tr{
+					&:hover {
+						background: #eee;
+					}
+				}
+			}
+
+			thead{
+				tr {
+				
+					th {
+						@extend %tb_td;
+					}
+				}
+			}
+			tbody{
+				tr{
+
+					td {
+
+						@extend %tb_td;
+
+						.price {
+							color: #f60;
+						}
+						.reserve {
+							width: 80px;
+							height: 35px;
+							line-height: 35px;
+							background: #f60;
+							border-radius: 4px;
+							display: inline-block;
+							color: #fff;
+						}
+					}
+				}
+
+			}
+
+			.tbf {
+				tr {
+					cursor: pointer;
+					td {
+					@extend %tb_td;
+					.more2 {
+						color: #666;
+					}
+					}
+				}
+			}
+
+		}
+
+	}
+
+}
