@@ -1,24 +1,24 @@
 @charset "UTF-8";
 // body 字体
 $body-font:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
-/*页面宽度*/
+//页面宽度
 
 $pg_width:1263px;
 
 
-/*logo的尺寸*/
+//logo的尺寸
 $logo_width:240px;
 $logo_height:70px;
 
-/*导航的尺寸*/
+//导航的尺寸
 $nav_height:$logo_height;
 $nav_width:650px;
 
-/*header的高度*/
+//header的高度
 $hd_height:$logo_height;
 
 
-/*    搜索框、按钮、外包裹尺寸*/
+//    搜索框、按钮、外包裹尺寸
 	$txt_width:446px;
 	$txt_height:48px;
 	$btn_width:120px;
@@ -26,16 +26,12 @@ $hd_height:$logo_height;
 	$wrap_width:$txt_width+$btn_width+34px;
 	$wrap_height:$txt_height+12px;
 
-
-/*水平居中*/
+//水平居中
 %center_h{
 	margin: 0 auto;
 }
 
-/*内外边距值为零*/
-%mg0_pd0{margin: 0;padding: 0;}
-
-*{@extend %mg0_pd0;}
+*{margin:0;padding:0;}
 ul {list-style: none;}
 ol {list-style: none;}
 a {text-decoration: none;}

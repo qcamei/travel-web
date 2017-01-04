@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import"common.scss";
+.about {
+
+
+	font-size: 20px;
+	color: #666;
+	text-align: left;
+	p{
+		margin: 20px 0;
+		text-indent: 2em;
+		line-height: 2;
+	}
+	address {
+		font-style: normal;
+		margin: 40px 0 0;
+		line-height: 1.6;
+		ul {
+			margin: 20px 0 0;
+
+		}
+			li{
+				text-decoration: normal;
+
+			}
+	}
+	
+}

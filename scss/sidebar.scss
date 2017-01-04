@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import"common.scss";
+$side_width:340px;
+.m-sidebar{
+	float: right;
+	width: $side_width;
+	.content{
+		clear: both;
+		border: 1px solid #eee;
+		margin: 0 0 10px;
+
+		h2 {
+			background: f4f4f4;
+			font-size: 20px;
+			font-weight: normal;
+			height: 40px;
+			line-height: 40px;
+			text-align: left;
+			text-indent: 10px;
+			color:#666;
+			border-bottom:1px solid #eee;
+		}
+	}
+	.recommend{
+		height: 330px;
+		.tag{
+			&>ul {
+				margin: 0 0 0 10px;
+				li {
+					width: ($side_width/3)-13px;
+					height: 35px;
+					line-height:35px;
+					margin: 5px 0 0 5px;
+					float: left;
+
+				}
+					a{
+						font-size: 16px;
+						color: #999;
+						background-color: #eee;
+						display: block;
+						text-indent: 10px;
+						&:hover {
+							background: #458b00;
+							color: #fff;
+						}
+					}
+			}
+		}
+	}
+
+	.hot{
+		.fig{
+			padding: 10px 0;
+
+			figure {
+				display: inline-block;
+				padding: 4px;
+				text-align:center;
+			}
+				figcaption {
+					color: #666;
+
+				}
+		}
+	}
+	.treasure{
+		.box{
+			padding: 10px 0;
+			h2 {}
+			a{				
+				margin: 0 0 5px 5px;
+				background-color: #eee;
+				display: inline-block;
+				width: ($side_width/2)-10px;
+				height: 40px;
+				line-height: 40px;				
+				font-size: 16px;
+				color: #999;
+				text-align: left;
+				text-indent: 35px;
+				
+				
+			}
+			.trea1{
+				background: #eee url("../img/trea1.png") no-repeat scroll 10px center;
+			}
+			.trea2{
+				background: #eee url("../img/trea2.png") no-repeat scroll 10px center;
+			}
+			.trea3{
+				background: #eee url("../img/trea3.png") no-repeat scroll 10px center;
+			}
+			.trea4{
+				background: #eee url("../img/trea4.png") no-repeat scroll 10px center;
+			}
+		}
+	}
+}
